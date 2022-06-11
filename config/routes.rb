@@ -7,8 +7,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'sesion', to: 'sesion#login', as: :sesion
-  get 'sesion/signIn', to: 'sesion#signIn', as: :signIn
+  get '', to: 'sesion#login', as: :sesion
 
 
   # Defines the root path route ("/")
