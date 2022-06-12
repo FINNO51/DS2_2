@@ -5,6 +5,7 @@ class SesionController < ApplicationController
 
   def create  
     @user = User.find_by(nombre: params[:nombre])
+    puts "Hola"
 
     if !!@user && user.authenticate(params[:password])
       session[:id] = @user.id
