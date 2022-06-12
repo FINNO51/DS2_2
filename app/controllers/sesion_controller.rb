@@ -22,9 +22,9 @@ class SesionController < ApplicationController
 
   def logearse
     puts "Estoy harto ya"
-   # user = User.new(user_params_login)
-   # puts #{user.usuario_registrado}
-   # redirect_to '/'
+    user = User.new(user_params_login)
+    puts #{user.usuario_registrado}
+    redirect_to '/login'
   end
 
   def signIn

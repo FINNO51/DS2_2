@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get '/login' => 'sesion#login'
   # post '', to: 'sesion#create'
   #post '/login' => 'sesion#create'
-  #post '/login' => 'sesion#login'
+  post '/logearse' => 'sesion#logearse'
   # post '/login', :to => 'sesion#create'
 
 
