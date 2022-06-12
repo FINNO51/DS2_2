@@ -3,14 +3,14 @@
 <h1>Users</h1>
 
 <div id="users">
-  <% @array = @users.sort_by{|e| -e[:record]}%>
+  #<% @array = @users.sort_by{|e| -e[:record]}%>
   <table>
   <tr>
   #  <th>Posicion</th>
     <th>Nombre</th>    
     <th>Record</th>
   </tr>
-  <% @array.each do |user| %>
+  <% @users.each do |user| %>
     
     <td><%= render user.nombre %></td>
     <td><%= render user.record %></td>
