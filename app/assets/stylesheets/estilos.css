@@ -200,12 +200,18 @@ main{
 
   #users div{
     width: 100%;
-    align-items: center;
+    align-items:center;
+  }
+  #encajar div{
+    width: 100%;
+    align-items:center;
   }
 
   #users h1{
       width:100%;
       text-align: center;
       padding:20px;
+      background: #000000;
+      color: white;
     }
 
