@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get '', to: 'sesion#login', as: :sesion
+  get '', :to => 'sesion#login'
  # post '', to: 'sesion#create'
   post '', :to => 'sesion#create'
  # post '/login', :to => 'sesion#create'
