@@ -9,9 +9,10 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'login', :to => 'sesion#login'
+  get 'login' => 'sesion#login'
   # post '', to: 'sesion#create'
-  post '', :to => 'sesion#create'
+  #post '/login' => 'sesion#create'
+  post '/login' => 'sesion#login'
   # post '/login', :to => 'sesion#create'
 
 
