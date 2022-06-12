@@ -257,6 +257,7 @@ main{
     }
 
     #imagen{
+        text-align: center;
         width: 40%;
         height: 40%;
     }
