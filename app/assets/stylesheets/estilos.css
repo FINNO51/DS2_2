@@ -178,7 +178,7 @@ main{
 #customers {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 60%;
   }
   
   #customers td, #customers th {
@@ -187,14 +187,24 @@ main{
   }
   
   #customers tr:nth-child(even){background-color: #f2f2f2;}
-  
+  #customers tr:nth-child(uneven){background-color: #ffffff;}
   #customers tr:hover {background-color: #ddd;}
   
   #customers th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
+    text-align: center;
+    background-color: #00311f;
     color: white;
   }
+
+  #users div{
+    align-items: center;
+  }
+
+  #users h1{
+      width:100%;
+      text-align: center;
+      padding:20px;
+    }
 

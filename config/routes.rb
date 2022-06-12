@@ -9,12 +9,8 @@ Rails.application.routes.draw do
   end
   
   get '/login' => 'sesion#login'
-  # post '', to: 'sesion#create'
-  #post '/login' => 'sesion#create'
-  post '/logearse' => 'sesion#logearse'
-  # post '/login', :to => 'sesion#create'
-
-
+  get '' => 'sesion#home'
+ 
   # Defines the root path route ("/")
   # root "articles#index"
 end
