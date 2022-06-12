@@ -1,24 +1,47 @@
-<p style="color: green"><%= notice %></p>
+<p style="
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-<h1>CLASIFICACIÓN</h1>
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}"><%= notice %></p>
+
 
 <div id="users">
-<% index = 0%>
-<% @array = @users.sort_by{|e| -e[:record]}%>
-  <table>
-  <tr>
-    <th>Posición</th>  
-    <th>Nombre</th>    
-    <th>Record</th>
-  </tr>
-  <% @array.each do |user| %> 
-  <% index += 1%>
-  <tr>   
-    <td><%= index %></td>
-    <td><%= user.nombre %></td>
-    <td><%= user.record %></td>
-  </tr>
-  <% end %>
-  </table>
+  <h1>CLASIFICACIÓN</h1>
+
+  <% index = 0%>
+  <% @array = @users.sort_by{|e| -e[:record]}%>
+    <table id="customers">
+    <tr>
+      <th>Posición</th>  
+      <th>Nombre</th>    
+      <th>Record</th>
+    </tr>
+    <% @array.each do |user| %> 
+    <% index += 1%>
+    <tr>   
+      <td><%= index %></td>
+      <td><%= user.nombre %></td>
+      <td><%= user.record %></td>
+    </tr>
+    <% end %>
+    </table>
 </div>
 
