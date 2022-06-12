@@ -8,8 +8,8 @@ Rails.application.routes.draw do
     end
   end
 
-  get '', :to => 'sesion#login'
- # post '', to: 'sesion#create'
+  get '/login', :to => 'sesion#login', as :login
+  # post '', to: 'sesion#create'
   post '', :to => 'sesion#create'
  # post '/login', :to => 'sesion#create'
 
