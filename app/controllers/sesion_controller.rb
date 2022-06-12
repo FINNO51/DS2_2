@@ -2,6 +2,10 @@ class SesionController < ApplicationController
   def login
       puts "hola"
   end
+
+  def home
+
+  end
   
   def new 
     @user = User.new
