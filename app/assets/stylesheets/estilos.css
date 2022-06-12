@@ -244,7 +244,6 @@ main{
     }
 
     #botonJugar:hover {
-        
         background-color: #ffffff;
         color:#00311f ;
         margin-left: 40%;
@@ -253,9 +252,8 @@ main{
 
     #descargar{
         margin-top: 50px;
-        font-size: 150%;
-        background-color: #00311f;
-        color: #ddd;
+        color: white;
+        margin: 20px;
     }
 
 
