@@ -33,21 +33,21 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <h2>Iniciar Sesión</h2>
-                    <%= form_tag(action:"/login", class: "formulario__login", method: :post) do %>
-                       Username: <%= text_field_tag :nombre %><br>
-                       Password: <%= password_field_tag :password %><br>
-                       <%= submit_tag "Entrar" %>
-                    <% end %>
+                    <form action="/login" method="POST" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Nombre" name="user[usuario_registrado]">
+                        <input type="password" placeholder="Contraseña" name="user[contrasena_registrada]">
+                        <button type="submit" name="submit" class="submit">Entrar</button>
+                    </form>
 
                     <!--Register-->
-                    <%= form_tag(action:"/login" class: "formulario__register",method: :post) do %>
+                    <form action="/registro" method="POST" class="formulario__register">
                         <h2>Registrarse</h2>
-                        Username: <%= text_field_tag :nombre %><br>
-                        Email: <%= text_field_tag :email %><br>
-                        Password: <%= password_field_tag :password %><br>
-                        <%= submit_tag "Registrarse" %>
-                    <% end %>
+                        <input type="text" placeholder="Usuario" name="user[usuario]">
+                        <input type="correo" placeholder="Correo" name="user[correo]">
+                        <input type="password" placeholder="Contraseña" name="user[contrasena]">
+                        <button type="submit" name="submit" class="submit">Registrarse</button>
+                    </form>
                 </div>
             </div>
 
