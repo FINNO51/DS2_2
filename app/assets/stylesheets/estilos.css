@@ -256,4 +256,7 @@ main{
         margin: 20px;
     }
 
-
+    #imagen{
+        width: 40%;
+        height: 40%;
+    }
