@@ -1,6 +1,6 @@
 class SesionController < ApplicationController
   def index
-
+      puts "index"
   end
   
   def new 
