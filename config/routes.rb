@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :users
+  resources :sesion
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   namespace :api, defaults: { format: 'json' }  do
     namespace :v1 do
@@ -10,7 +11,7 @@ Rails.application.routes.draw do
   get '', to: 'sesion#login', as: :sesion
  # post '', to: 'sesion#create'
   post '', :to => 'sesion#create'
-  post '/login', to => 'sesion#create'
+ # post '/login', :to => 'sesion#create'
 
 
   # Defines the root path route ("/")
