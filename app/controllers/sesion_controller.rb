@@ -22,7 +22,8 @@ class SesionController < ApplicationController
 
   def logearse   
     user = User.new(user_params_login)
-    puts "#{user.usuario_registrado}"    
+    @print = user 
+        
   end
 
   def signIn
