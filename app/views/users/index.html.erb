@@ -3,12 +3,18 @@
 <h1>Users</h1>
 
 <div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
+  <% @array = @user.sort_by{|e| -e[:record]}%>
+  <table>
+  <tr>
+    <th>Posicion</th>
+    <th>Nombre</th>    
+    <th>Record</th>
+  </tr>
+  <% @array.each do |user| %>
+    <td><%= render index %></td>
+    <td><%= render user.nombre %></td>
+    <td><%= render user.record %></td>
   <% end %>
+  </table>
 </div>
 
-<%= link_to "New user", new_user_path %>
