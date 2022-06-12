@@ -224,9 +224,38 @@ main{
       align-self: center;
     }
 
-    #Inicio {
+    #Inicio1 {
+        text-align: center;
         color: white;
         margin: 20px;
+    }
+
+    #Inicio2 {
+        color: white;
+        margin: 20px;
+    }
+
+    #botonJugar {
+        font-size: 150%;
+        background-color: #00311f;
+        color: #ddd;
+        margin-left: 40%;
+        padding: 30px;
+    }
+
+    #botonJugar:hover {
+        
+        background-color: #ffffff;
+        color:#00311f ;
+        margin-left: 40%;
+        padding: 30px;
+    }
+
+    #descargar{
+        margin-top: 50px;
+        font-size: 150%;
+        background-color: #00311f;
+        color: #ddd;
     }
 
 
