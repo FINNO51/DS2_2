@@ -3,9 +3,6 @@ document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciar
 document.getElementById("btn__registrarse").addEventListener("click", register);
 window.addEventListener("resize", anchoPage);
 
-document.getElementById("submit").addEventListener("click", function(event){
-    event.preventDefault()
-  });
 
 //Declarando variables
 var formulario_login = document.querySelector(".formulario__login");
