@@ -34,14 +34,14 @@
                 <div class="contenedor__login-register">
                     <!--Login-->
                     <h2>Iniciar Sesión</h2>
-                    <%= form_tag(:users ,class: "formulario__login", method: :post) do %>
+                    <%= form_tag(class: "formulario__login", method: :post) do %>
                        Username: <%= text_field_tag :nombre %><br>
                        Password: <%= password_field_tag :password %><br>
                        <%= submit_tag "Entrar" %>
                     <% end %>
 
                     <!--Register-->
-                    <%= form_tag(:users, class: "formulario__register",method: :post) do %>
+                    <%= form_tag(class: "formulario__register",method: :post) do %>
                         <h2>Registrarse</h2>
                         Username: <%= text_field_tag :nombre %><br>
                         Email: <%= text_field_tag :email %><br>
