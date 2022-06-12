@@ -9,7 +9,7 @@ Rails.application.routes.draw do
    # end
   #end
   
-  get '/login' => 'sesion#index'
+  get '/login' => 'sesion#login'
   # post '', to: 'sesion#create'
   #post '/login' => 'sesion#create'
   #post '/login' => 'sesion#login'

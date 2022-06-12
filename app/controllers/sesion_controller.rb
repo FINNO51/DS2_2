@@ -1,6 +1,6 @@
 class SesionController < ApplicationController
-  def index
-      puts "index"
+  def login
+      puts "hola"
   end
   
   def new 
@@ -20,11 +20,11 @@ class SesionController < ApplicationController
     end
   end  
 
-  def login
+  def logearse
     puts "Estoy harto ya"
-    user = User.new(user_params_login)
-    puts #{user.usuario_registrado}
-    redirect_to '/'
+   # user = User.new(user_params_login)
+   # puts #{user.usuario_registrado}
+   # redirect_to '/'
   end
 
   def signIn
