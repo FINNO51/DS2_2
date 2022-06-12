@@ -3,6 +3,18 @@ class SesionController < ApplicationController
     @user = User.new
   end
 
+  def create  
+    @user = User.find_by(nombre: params[:nombre])
+
+    if !!@user && user.authenticate(params[:password])
+      session[:id] = @user.id
+      redirect_to root_path
+    else
+      message = "Error user o contraseña incorrectos"
+      redirect_to login_path, notice: message
+    end
+  end  
+
   def login
     
   end
