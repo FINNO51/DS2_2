@@ -24,7 +24,7 @@ class SesionController < ApplicationController
     puts "Estoy harto ya"
     user = User.new(user_params_login)
     puts #{user.usuario_registrado}
-    redirect_to ''
+    redirect_to '/'
   end
 
   def signIn
