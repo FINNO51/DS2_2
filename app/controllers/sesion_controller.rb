@@ -17,7 +17,7 @@ class SesionController < ApplicationController
   end  
 
   def login
-    
+    puts "Estoy harto ya"
   end
 
   def signIn
