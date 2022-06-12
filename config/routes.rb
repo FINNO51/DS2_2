@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '', to: 'sesion#login', as: :sesion
  # post '', to: 'sesion#create'
   post '', :to => 'sesion#create'
+  post '/login', to => 'sesion#create'
 
 
   # Defines the root path route ("/")
