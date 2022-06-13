@@ -225,14 +225,17 @@ main{
     }
 
     #Inicio1 {
-        text-align: center;
         color: white;
         margin: 20px;
+        background: rgba(35, 107, 53, 0.9);
+        border-radius:2%;
     }
 
     #Inicio2 {
-        color: rgb(5, 59, 26);
+        color: white;
         margin: 20px;
+        background: rgba(35, 107, 53, 0.9);
+        border-radius:2%;
     }
 
     #botonJugar {
