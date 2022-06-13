@@ -11,4 +11,8 @@ class UserTest < ActiveSupport::TestCase
         cartas_azules
       end
    end
+
+   test "user_count" do
+    assert_equal 16, Project.count
+   end
 end
