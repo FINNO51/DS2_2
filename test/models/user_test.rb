@@ -7,7 +7,8 @@ class UserTest < ActiveSupport::TestCase
 
    test "should report error" do
       #la variable cartas no existe en ningun otro sitio en los tests
-      cartas_azules
+      assert_raises(NameError) do
+        cartas_azules
       assert true
    end
 end
