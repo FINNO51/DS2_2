@@ -229,13 +229,15 @@ main{
         margin: 20px;
         background: rgba(35, 107, 53, 0.9);
         border-radius:2%;
+        padding: 5px;
     }
 
     #Inicio2 {
         color: white;
         margin: 20px;
-        background: rgba(35, 107, 53, 0.9);
-        border-radius:2%;
+        background: rgba(35, 107, 53, 0.7);
+        border-radius:5%;
+        padding: 5px;
     }
 
     #botonJugar {
@@ -272,5 +274,20 @@ main{
         color: white;
         margin: 20px;
         background: rgba(35, 107, 53, 0.9);
-        border-radius:2%;
+        border-radius:5%;
+        padding: 5px;
+    }
+
+    #Instrucciones{
+        color: white;
+        margin: 20px;
+        background: rgba(35, 107, 53, 0.9);
+        border-radius:5%;
+        padding: 5px;
+    }
+
+    #volver{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
