@@ -1,6 +1,6 @@
 class SesionController < ApplicationController
   def login
-      puts "hola"
+     
   end
 
   def home
@@ -13,7 +13,7 @@ class SesionController < ApplicationController
 
   def create  
     @user = User.find_by(nombre: params[:nombre])
-    puts "Hola" 
+   
 
     if !!@user && user.authenticate(params[:password])
       session[:id] = @user.id
@@ -26,7 +26,7 @@ class SesionController < ApplicationController
 
   def logearse   
     user = User.new(user_params_login)
-    puts "hola" 
+    
         
   end
 
@@ -36,6 +36,9 @@ class SesionController < ApplicationController
 
   def logout
 
+  end
+
+  def instrucciones
   end
 
   private

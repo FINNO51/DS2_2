@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   
   get '/login' => 'sesion#login'
   get '' => 'sesion#home'
+  get '/reglas' => 'sesion#instrucciones'
  
   # Defines the root path route ("/")
   # root "articles#index"
