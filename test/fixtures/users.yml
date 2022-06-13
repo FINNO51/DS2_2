@@ -7,7 +7,7 @@ one:
   record: 1
 
 two:
-  nombre: MyString
-  email: MyString
-  password: MyString
-  record: 1
+  nombre: MyString2
+  email: MyString2
+  password: MyString2
+  record: 2
