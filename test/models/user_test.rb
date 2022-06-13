@@ -13,6 +13,6 @@ class UserTest < ActiveSupport::TestCase
    end
 
    test "user_count" do
-    assert_equal 16, User.count
+    assert_equal 2, User.count
    end
 end
