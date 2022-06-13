@@ -9,6 +9,6 @@ class UserTest < ActiveSupport::TestCase
       #la variable cartas no existe en ningun otro sitio en los tests
       assert_raises(NameError) do
         cartas_azules
-      assert true
+      end
    end
 end
